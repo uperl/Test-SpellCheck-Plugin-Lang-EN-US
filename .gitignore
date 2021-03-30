@@ -1,0 +1,5 @@
+Test-SpellCheck-Plugin-Lang-EN-US-*
+/.build/
+*.swp
+
+
