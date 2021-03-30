@@ -44,8 +44,9 @@ sub primary_dictionary ($self)
 =head1 BUNDLED FILES
 
 This distribtion comes bundled with files from the SCOWL (And Friends) project,
-which is copyright under these terms (some of these terms are other English
-language dictionaries which are not bundled with this dist):
+which is copyright under these terms (some of these terms are for other English
+language dictionaries from the SCOWL project, which are not bundled with this
+dist):
 
 COPYRIGHT, SOURCES, and CREDITS:
 
