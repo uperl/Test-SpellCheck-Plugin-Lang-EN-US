@@ -1,52 +1,89 @@
-package Test::SpellCheck::Plugin::Lang::EN::US;
+en_US Hunspell Dictionary
+Version 2020.12.07
+Mon Dec 7 20:14:35 2020 -0500 [5ef55f9]
+http://wordlist.sourceforge.net
 
-use strict;
-use warnings;
-use 5.026;
-use experimental qw( signatures );
-use File::ShareDir::Dist qw( dist_share );
-use Path::Tiny qw( path );
+README file for English Hunspell dictionaries derived from SCOWL.
 
-# ABSTRACT: US English language dictionary for Test::SpellCheck
-# VERSION
+These dictionaries are created using the speller/make-hunspell-dict
+script in SCOWL.
 
-=head1 SYNOPSIS
+The following dictionaries are available:
 
- # TODO
+  en_US (American)
+  en_CA (Canadian)
+  en_GB-ise (British with "ise" spelling)
+  en_GB-ize (British with "ize" spelling)
+  en_AU (Australian)
 
-=head1 DESCRIPTION
+  en_US-large
+  en_CA-large
+  en_GB-large (with both "ise" and "ize" spelling)
+  en_AU-large
 
-This L<Test::SpellCheck> provides the US English dictionary for checking 
-spelling.  It is a primary dictionary, so it shouldn't be used with other
-primary dictionaries.
+The normal (non-large) dictionaries correspond to SCOWL size 60 and,
+to encourage consistent spelling, generally only include one spelling
+variant for a word.  The large dictionaries correspond to SCOWL size
+70 and may include multiple spelling for a word when both variants are
+considered almost equal.  The larger dictionaries however (1) have not
+been as carefully checked for errors as the normal dictionaries and
+thus may contain misspelled or invalid words; and (2) contain
+uncommon, yet valid, words that might cause problems as they are
+likely to be misspellings of more common words (for example, "ort" and
+"calender").
 
-=cut
+To get an idea of the difference in size, here are 25 random words
+only found in the large dictionary for American English:
 
-sub new ($class)
-{
-  bless {
-    root => path(dist_share('Test-SpellCheck-Plugin-Lang-EN-US')),
-  }, $class;
-}
+  Bermejo Freyr's Guenevere Hatshepsut Nottinghamshire arrestment
+  crassitudes crural dogwatches errorless fetial flaxseeds godroon
+  incretion jalapeño's kelpie kishkes neuroglias pietisms pullulation
+  stemwinder stenoses syce thalassic zees
 
-sub primary_dictionary ($self)
-{
-  return (
-    map { $_->stringify } (
-      $self->{root}->child('en/us/en_US.aff'),
-      $self->{root}->child('en/us/en_US.dic'),
-    )
-  );
-}
+The en_US, en_CA and en_AU are the official dictionaries for Hunspell.
+The en_GB and large dictionaries are made available on an experimental
+basis.  If you find them useful please send me a quick email at
+kevina@gnu.org.
 
-1;
+If none of these dictionaries suite you (for example, maybe you want
+the normal dictionary that also includes common variants) additional
+dictionaries can be generated at http://app.aspell.net/create or by
+modifying speller/make-hunspell-dict in SCOWL.  Please do let me know
+if you end up publishing a customized dictionary.
 
-=head1 BUNDLED FILES
+If a word is not found in the dictionary or a word is there you think
+shouldn't be, you can lookup the word up at http://app.aspell.net/lookup
+to help determine why that is.
 
-This distribtion comes bundled with files from the SCOWL (And Friends) project,
-which is copyright under these terms (some of these terms are for other English
-language dictionaries from the SCOWL project, which are not bundled with this
-dist):
+General comments on these list can be sent directly to me at
+kevina@gnu.org or to the wordlist-devel mailing lists
+(https://lists.sourceforge.net/lists/listinfo/wordlist-devel).  If you
+have specific issues with any of these dictionaries please file a bug
+report at https://github.com/kevina/wordlist/issues.
+
+IMPORTANT CHANGES INTRODUCED In 2016.11.20:
+
+New Australian dictionaries thanks to the work of Benjamin Titze
+(btitze@protonmail.ch).
+
+IMPORTANT CHANGES INTRODUCED IN 2016.04.24:
+
+The dictionaries are now in UTF-8 format instead of ISO-8859-1.  This
+was required to handle smart quotes correctly.
+
+IMPORTANT CHANGES INTRODUCED IN 2016.01.19:
+
+"SET UTF8" was changes to "SET UTF-8" in the affix file as some
+versions of Hunspell do not recognize "UTF8".
+
+ADDITIONAL NOTES:
+
+The NOSUGGEST flag was added to certain taboo words.  While I made an
+honest attempt to flag the strongest taboo words with the NOSUGGEST
+flag, I MAKE NO GUARANTEE THAT I FLAGGED EVERY POSSIBLE TABOO WORD.
+The list was originally derived from Németh László, however I removed
+some words which, while being considered taboo by some dictionaries,
+are not really considered swear words in today's society.
 
 COPYRIGHT, SOURCES, and CREDITS:
 
@@ -308,5 +345,3 @@ and Australian word list.  It is under the following copyright:
 
 Build Date: Mon Dec  7 20:19:27 EST 2020
 Wordlist Command: mk-list --accents=strip en_US 60
-
-=cut
