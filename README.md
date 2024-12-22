@@ -1,4 +1,4 @@
-# Test::SpellCheck::Plugin::Lang::EN::US ![linux](https://github.com/uperl/Test-SpellCheck-Plugin-Lang-EN-US/workflows/linux/badge.svg) ![windows](https://github.com/uperl/Test-SpellCheck-Plugin-Lang-EN-US/workflows/windows/badge.svg) ![macos](https://github.com/uperl/Test-SpellCheck-Plugin-Lang-EN-US/workflows/macos/badge.svg) ![msys2-mingw](https://github.com/uperl/Test-SpellCheck-Plugin-Lang-EN-US/workflows/msys2-mingw/badge.svg)
+# Test::SpellCheck::Plugin::Lang::EN::US ![linux](https://github.com/uperl/Test-SpellCheck-Plugin-Lang-EN-US/workflows/linux/badge.svg) ![windows](https://github.com/uperl/Test-SpellCheck-Plugin-Lang-EN-US/workflows/windows/badge.svg) ![macos](https://github.com/uperl/Test-SpellCheck-Plugin-Lang-EN-US/workflows/macos/badge.svg)
 
 US English language dictionary for Test::SpellCheck
 
