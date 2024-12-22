@@ -2,4 +2,7 @@ Test-SpellCheck-Plugin-Lang-EN-US-*
 /.build/
 *.swp
 
-
+/Test-SpellCheck-Plugin-Lang-EN-US-*
+/.build
+*.old
+*.orig
