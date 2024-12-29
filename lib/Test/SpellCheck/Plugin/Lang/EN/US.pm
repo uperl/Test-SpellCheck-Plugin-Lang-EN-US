@@ -16,9 +16,9 @@ use Path::Tiny qw( path );
 
 =head1 DESCRIPTION
 
-This L<Test::SpellCheck> provides the US English dictionary for checking 
-spelling.  It is a primary dictionary, so it shouldn't be used with other
-primary dictionaries.
+This L<Test::SpellCheck> plugin provides the US English dictionary for
+checking spelling.  It is a primary dictionary, so it shouldn't be
+used with other primary dictionaries.
 
 =cut
 
