@@ -21,7 +21,7 @@ which is copyright under these terms (some of these terms are for other English
 language dictionaries from the SCOWL project, which are not bundled with this
 dist):
 
-COPYRIGHT, SOURCES, and CREDITS:
+## COPYRIGHT, SOURCES, and CREDITS:
 
 The English dictionaries come directly from SCOWL 
 and is thus under the same copyright of SCOWL.  The affix file is
