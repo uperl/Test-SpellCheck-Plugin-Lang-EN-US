@@ -2,6 +2,9 @@ Revision history for {{$dist->name}}
 
 {{$NEXT}}
 
+0.03      2024-12-29 08:22:41 -0700
+  - First CPAN version
+
 0.02      2024-12-29 07:01:10 -0700
   - Restore compatibility back to Perl 5.20
 
