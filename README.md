@@ -10,9 +10,9 @@ US English language dictionary for Test::SpellCheck
 
 # DESCRIPTION
 
-This [Test::SpellCheck](https://metacpan.org/pod/Test::SpellCheck) provides the US English dictionary for checking 
-spelling.  It is a primary dictionary, so it shouldn't be used with other
-primary dictionaries.
+This [Test::SpellCheck](https://metacpan.org/pod/Test::SpellCheck) plugin provides the US English dictionary for
+checking spelling.  It is a primary dictionary, so it shouldn't be
+used with other primary dictionaries.
 
 # BUNDLED FILES
 
